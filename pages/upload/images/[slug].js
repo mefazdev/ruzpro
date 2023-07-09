@@ -223,7 +223,7 @@ export default function Images() {
           <div className="grid md:grid-cols-3 gap-10 mt-7">
             <div className="add__img__div__outer h-fit">
               <div className="add__img__div relative">
-                <Fab
+                {/* <Fab
                   className="bg-gray-200"
                   style={{
                     position: "absolute",
@@ -238,7 +238,7 @@ export default function Images() {
                   aria-label="add"
                 >
                   1
-                </Fab>
+                </Fab> */}
                 <div>
                   {img1 ? (
                     <div>
@@ -273,7 +273,7 @@ export default function Images() {
 
             <div className="add__img__div__outer  h-fit">
               <div className="add__img__div relative">
-                <Fab
+                {/* <Fab
                   className="bg-gray-200"
                   style={{
                     position: "absolute",
@@ -288,7 +288,7 @@ export default function Images() {
                   aria-label="add"
                 >
                   2
-                </Fab>{" "}
+                </Fab> */}
                 <div>
                   {img2 ? (
                     <div>
@@ -322,7 +322,7 @@ export default function Images() {
 
             <div className="add__img__div__outer h-fit">
               <div className="add__img__div relative">
-                <Fab
+                {/* <Fab
                   className="bg-gray-200"
                   style={{
                     position: "absolute",
@@ -337,7 +337,7 @@ export default function Images() {
                   aria-label="add"
                 >
                   3
-                </Fab>{" "}
+                </Fab> */}
                 <div>
                   {img3 ? (
                     <div>
@@ -370,22 +370,27 @@ export default function Images() {
               </div>
             </div>
           </div>
-          <div className="mt-4">
+          <div className="mt-4"
+           style={{ float: "right"}}
+             
+          >
+            
+            <Button
+              disabled={skipping ? true : false}
+              onClick={skip}
+              className="mr-3 text-red-400"
+              style={{  border: "1px solid blue" }}
+            >
+              SKIP
+            </Button>
+            
             <Button
               onClick={uploadImages}
-              style={{ float: "right", border: "1px solid blue" }}
+              style={{ border: "1px solid blue" }}
               disabled={uploading ? true : false}
               className="ml-3"
             >
               {uploading ? "Uploading..." : "Upload"}
-            </Button>
-            <Button
-              disabled={skipping ? true : false}
-              onClick={skip}
-              className="mr-3"
-              style={{ float: "right", border: "1px solid orange" }}
-            >
-              SKIP
             </Button>
           </div>
         </div>
