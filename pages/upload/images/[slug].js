@@ -182,7 +182,7 @@ export default function Images() {
   };
 
   const addImages = async (downloadURL1, downloadURL2, downloadURL3) => {
-    if (downloadURL1 && downloadURL2 && downloadURL3) {
+ 
       try {
         const res = await fetch(
           `${process.env.NEXT_PUBLIC_PORT}/api/property/${id}`,
@@ -207,7 +207,7 @@ export default function Images() {
         alert("Ann error occurred!. Try again");
         console.log(error.message);
       }
-    }
+  
   };
   return (
     <div className="pb-20">
@@ -383,7 +383,7 @@ export default function Images() {
             >
               SKIP
             </Button>
-            
+
             <Button
               onClick={uploadImages}
               style={{ border: "1px solid blue" }}

@@ -55,7 +55,7 @@ export default function Navbar() {
         );
         const { data } = await res.json();
         setData(data);
-        console.log(data)
+       
       } catch (error) {
         console.log(error);
       }
