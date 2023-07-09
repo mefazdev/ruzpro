@@ -29,6 +29,7 @@ export default function Navbar() {
   useEffect(() => {
     onAuthStateChanged(auth, (currentUser) => {
       setUid(currentUser?.uid);
+      // console.log(currentUser)
     });
   }, []);
 
@@ -45,6 +46,7 @@ export default function Navbar() {
   const auth = getAuth();
 
   const getUserData = async () => {
+    console.log(uid)
     if (uid) {
       try {
         const res = await fetch(
@@ -53,6 +55,7 @@ export default function Navbar() {
         );
         const { data } = await res.json();
         setData(data);
+        console.log(data)
       } catch (error) {
         console.log(error);
       }
@@ -91,7 +94,7 @@ export default function Navbar() {
             <Image src={logo} />
           </div>
         </Link>
-
+ 
         <div
           className="nav__search hidden  lg:flex justify-between pl-4 pr-2 cursor-pointer"
           onClick={

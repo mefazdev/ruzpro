@@ -57,7 +57,7 @@ export default function AdvSearch() {
   };
 
   return (
-    <div style={{ minWidth: "100%" }}>
+    <div style={{ minWidth: "100%"}}   >
       <div className="adv__search">
         <div className="bg-gray-300 h-9 rounded">
           <div
@@ -449,15 +449,16 @@ export default function AdvSearch() {
           </FormControl>
         </div>
       </div> */}
-          <div className="adv__row mt-3 grid md:grid-cols-4 gap-1 md:gap-10">
-            <h6></h6>
-            <div className="col-span-2 adv__row__right ">
+          <div className="adv__row mt-3 ">
+            
+            <div className="adv__row__right ">
               <div className="adv__btn__div">
                 <Link aria-disabled href={`/search/advSearch/${t}`}>
                   <button
                     id="ad__search__btn"
                     className="bg-green-800"
                     onClick={search}
+                    // style={{zIndex:'100'}}
                   >
                     {searching ? "PROCESSING..." : "  SEARCH"}
                   </button>

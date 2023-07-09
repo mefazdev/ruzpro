@@ -76,6 +76,7 @@ function Register() {
         const token = credential.accessToken;
 
         const user = result.user;
+        console.log("hi",user)
         // handleSubmit()
         checkUser(user);
         // createUser(user)
@@ -84,7 +85,7 @@ function Register() {
         // Handle Errors here.
         const errorCode = error.code;
         const errorMessage = error.message;
-        
+        console.log(errorMessage)
         alert(errorMessage);
         // The email of the user's account used.
         const email = error.customData.email;
@@ -95,18 +96,21 @@ function Register() {
   };
 
   const handleSubmit = async () => {
+ 
     onAuthStateChanged(auth, (currentUser) => {
       const user = currentUser;
       // console.log(currentUser.uid)
 
       checkUser(user);
+      console.log(user)
     });
   };
 
   const checkUser = async (user) => {
+    // alert('CHeck user')
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_PORT}/api/user/${user.uid}`,
+        `${process.env.NEXT_PUBLIC_PORT}/api/user/${user?.uid}`,
         {}
       );
       const { data } = await res.json();
@@ -125,6 +129,7 @@ function Register() {
   };
 
   const createUser = async (user) => {
+    console.log('creating user')
     const name = user.email.slice(0, 5);
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_PORT}/api/users`, {
@@ -223,13 +228,14 @@ function Register() {
         By clicking on &apos;Continue&apos;, you are agreeing to the terms and
         conditions and the privacy policy
       </p>
-      <button id="rgr__btn" className="bg-green-800" onClick={(e)=>checkCredentials(e)}>
+      <button id="rgr__btn" className="bg-green-800"
+       onClick={(e)=>checkCredentials(e)}>
         CONTINUE
       </button>
 
       <div className="flex rgr__or">
         <hr />
-        <h4>Or Signup with</h4>
+        <h4 onClick={handleSubmit}>Or Signup with</h4>
         <hr />
       </div>
       <div className="login__social flex">
