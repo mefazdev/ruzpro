@@ -1,0 +1,168 @@
+ .ftd {
+  margin-top: 40px;
+  padding-bottom: 50px;
+
+  background-color: rgba(19, 54, 71, 0.048);
+}
+.ftd__content {
+  margin: auto;
+  padding-top: 30px;
+}
+@media only screen and (min-width: 801px) {
+  .ftd__content {
+    max-width: 86%;
+  }
+}
+.ftd__content h3 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 20px;
+}
+
+.ftd__row {
+  margin-top: 20px;
+}
+.ftd__box {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#ftd__one {
+  background: url("https://code-theme.com/html/findhouses/images/blog/b-11.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.ftd__left__row {
+  justify-content: space-between;
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.ftd__left {
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+.ftd__left__row__left {
+  background-color: rgb(209, 16, 64);
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: #fff;
+  font-size: small;
+}
+.ftd__left__row__right {
+  background-color: rgba(46, 36, 38, 0.717);
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: #fff;
+  font-size: small;
+}
+
+.ftd__left__bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.ftd__left__icons {
+  background-color: rgba(88, 85, 85, 0.842);
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ftd__left__icon {
+  font-size: 20px;
+  color: #fff;
+}
+
+.ftd__right {
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.ftd__right__head {
+  font-family: "Montserrat", sans-serif;
+}
+.ftd__right__head h4 {
+  font-size: 15px;
+   /* font-weight: 600;  */
+  /* font-family: "Montserrat", sans-serif; */
+}
+.ftd__right__head h5 {
+  font-size: 14px;
+}
+#ftd__loc__icon {
+  color: gray;
+  font-size: 17px;
+}
+.ftd__right__row {
+  margin-top: 10px;
+}
+#ftd__amn__icon {
+  font-size: 20px;
+  color: rgba(128, 128, 128, 0.765);
+}
+.ftd__right__row p {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 4px;
+  font-size: 15px;
+}
+
+.ftd__third__row p {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 4px;
+  font-size: 14px;
+}
+.ftd__right__bottom {
+  border-top: 1px solid rgba(128, 128, 128, 0.616);
+  margin-top: 30px;
+}
+.ftd__r__right {
+  display: flex;
+  justify-content: space-between;
+}
+.ftd__right__bottom {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(59, 59, 59);
+}
+
+#ftd__r__icons {
+  font-size: 20px;
+  color: rgba(52, 52, 52, 0.824);
+}
+#ftd__r__icons__active {
+  font-size: 20px;
+  color: rgba(52, 52, 52, 0.824);
+  color: rgb(230, 6, 6);
+}
+@media only screen and (max-width: 801px) {
+  .ftd {
+    padding: 15px;
+    padding-bottom: 50px;
+  }
+  .v__more__btn {
+    min-width: 100%;
+    background-color: rgb(96, 95, 95);
+    display: flex;
+    justify-content: center;
+  }
+  .v__more__btn:hover {
+    background-color: rgb(109, 109, 109);
+  }
+} 

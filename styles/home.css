@@ -1,0 +1,315 @@
+.content {
+  margin: auto;
+  margin-top: 10px;
+}
+.cat__scrl__div {
+  width: fit-content;
+  text-align: center;
+}
+.cat__scrl p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 13px;
+  font-size: 12px;
+  color: rgb(97, 96, 96);
+  margin-top: 3px;
+}
+
+.main__banner {
+  min-height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .content {
+    padding: 15px;
+  }
+}
+.main__banner__left {
+  color: #fff;
+  padding: 20px;
+  position: relative;
+}
+.main__banner__left h4 {
+  font-family: "DynaPuff", cursive;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.main__banner__left h3 {
+  font-family: "DynaPuff", cursive;
+  font-size: 20px;
+}
+
+.main__banner__right {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0),
+      rgba(10, 10, 11, 0.75)
+    ),
+    url("../assets//images/skyscraper.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+.main__social__row {
+  bottom: 0;
+  margin-top: 10px;
+}
+.social__circle {
+  height: 25px;
+  width: 25px;
+
+  border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 5px;
+  color: rgba(255, 255, 255, 0.804);
+}
+
+.main__banner__right button {
+  background-color: rgb(130, 116, 51);
+  color: #fff;
+  font-size: 14px;
+  padding: 8px;
+  width: 100px;
+  max-height: 60px;
+}
+
+.home__cats {
+  margin: auto;
+  margin-top: 30px;
+}
+@media only screen and (min-width: 801px) {
+  .home__cats {
+    max-width: 86%;
+  }
+}
+.home__cats__div {
+  margin: auto;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* #home__cats__hm{
+  background:linear-gradient(45deg,rgba(21, 20, 20, 0.253),rgba(70, 70, 71, 0.75)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7hvNn3e0e6DA1WIwmJ1SS6U3cyOFOk3sYcw&usqp=CAU'); 
+  background-size: cover;
+} */
+/* #home__cats__land{
+    background:linear-gradient(45deg,rgba(21, 20, 20, 0.253),rgba(70, 70, 71, 0.75)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfXYoi4jU_D4OQPRMmcAtIqavV9V7QIOGkUQ&usqp=CAU'); 
+    background-size: cover;
+} */
+
+.home__cats__inner {
+  background-size: cover;
+
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#home__cats__arrow {
+  -webkit-animation: rotation 4s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .content {
+    margin-top: 0px;
+  }
+  .main__banner {
+    padding: 10px;
+    padding-top: 0px;
+  }
+  .main__banner__left h4 {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  .main__banner__left h3 {
+    font-size: 17px;
+  }
+  .main__banner__left {
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    /* font-family: 'Plus Jakarta Sans', sans-serif; */
+    /* font-family: 'Poppins', sans-serif;  */
+  }
+  .main__banner__right button {
+    font-size: 13px;
+    padding: 7px;
+    width: 90px;
+    /* max-height: 60px; */
+  }
+  .home__cats__div {
+    /* border: saddlebrown solid; */
+    margin: auto;
+    height: 130px;
+    width: 130px;
+  }
+  .home__cats__inner {
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    /* flex-direction: column; */
+    /* position: relative; */
+    /* background-color: black; */
+    /* -webkit-animation: rotation 8s infinite linear; */
+  }
+}
+
+.v__more__btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgb(209, 16, 64);
+  max-width: fit-content;
+  float: right;
+  border-radius: 4px;
+  padding: 3px;
+  cursor: pointer;
+}
+.v__more__btn:hover {
+  background-color: rgba(209, 16, 64, 0.911);
+}
+
+.phone__input select {
+  max-width: 100px;
+}
+.phone__input {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #c4c4c4;
+
+  height: 55px;
+  outline: none;
+  padding-left: 12px;
+
+  display: flex;
+  border-radius: 5px;
+  padding-top: 5px;
+
+  position: relative;
+}
+.phone__input input {
+  position: absolute;
+
+  width: 100%;
+  max-width: 86%;
+
+  right: 0;
+  margin-right: 5px;
+  border: none;
+
+  outline: none;
+  height: initial;
+
+  margin-top: 0px;
+  padding-left: 5px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+.phone__input img {
+  max-width: 30px;
+}
+.phone__input select {
+  outline: none;
+  margin-left: 30px;
+  max-width: 20px;
+}
+
+.resbox {
+  position: relative;
+
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.res__bg {
+  position: relative;
+  border-radius: 15px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 300px;
+}
+.resbox__bottom {
+  position: relative;
+}
+.resbox__bottom h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.resbox__bottom h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: rgb(81, 79, 79);
+}
+.resbox__bottom h4 {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 14px;
+  color: rgb(106, 105, 105);
+}
+.resbox__bottom h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(56, 55, 55);
+}
+.resbox__bottom p {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 14px;
+  color: rgb(56, 55, 55);
+}
+
+@media only screen and (min-width: 801px) {
+  .main__banner {
+    max-width: 86%;
+    margin: auto;
+  }
+  .content {
+    max-width: 90%;
+  }
+}
+
+.legal {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+
+.legal h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+#album__icon {
+  color: gray;
+}

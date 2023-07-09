@@ -1,0 +1,53 @@
+.fland {
+  margin-top: 60px;
+  padding-bottom: 50px;
+  background-color: rgba(19, 54, 71, 0.048);
+}
+
+@media only screen and (min-width: 801px) {
+  .fland__content {
+    margin: auto;
+    max-width: 86%;
+  }
+  .fland__box {
+    max-width: 300px;
+  }
+}
+.fland__content {
+  padding-top: 30px;
+}
+.fland__content h3 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.fland__box {
+  background-color: #fff;
+
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.fland__box__top {
+  background: url("https://code-theme.com/html/findhouses/images/blog/b-11.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 200px;
+  padding: 15px;
+  position: relative;
+}
+
+.fland__box__bottom {
+  padding: 15px;
+  padding-bottom: 0;
+}
+@media only screen and (max-width: 801px) {
+  .fland {
+    padding: 15px;
+    padding-bottom: 70px;
+  }
+}

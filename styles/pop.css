@@ -1,0 +1,79 @@
+/* .pop {
+  margin: auto;
+  margin-top: 60px;
+}
+@media only screen and (min-width: 801px) {
+  .pop {
+    max-width: 86%;
+  }
+}
+
+.pop__head h3 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.pop__content {
+  margin-top: 10px;
+}
+.pop__box {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  height: 130px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#pop__one {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSaIzTOPB_dAvjygXjQzCn_vSaVeO_fXuS7w&usqp=CAU");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#pop__three {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNg29Wop2Den6-zw6M8LHkkTwgiFc-Zn9IUQ&usqp=CAU");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#pop__four {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi0Aexx2U2MjLgnkd-OwNBGWoqNzYrZ94uOA&usqp=CAU");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#pop__five {
+  background: url("https://finediningindian.com/wp-content/uploads/2018/12/calicut-beach-Fine-dining-Indian-magazine-2018-December-Issue.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pop__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.pop__right h5 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.pop__right h5:hover {
+  color: rgb(234, 88, 88);
+  cursor: pointer;
+}
+.pop__right h6 {
+  font-weight: 600;
+}
+.pop__right p {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 800px) {
+  .pop {
+    padding: 15px;
+  }
+} */

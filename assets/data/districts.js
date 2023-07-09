@@ -1,0 +1,16 @@
+export const districts = [
+  "Trivantrum",
+  "Kollam",
+  "Alappuzha",
+  "Pathanamthitta",
+  "Kottayam",
+  "Idukki",
+  "Ernakulam",
+  "Thrissur",
+  "Palakkad",
+  "Malappuram",
+  "Kozhikode",
+  "Wayandu",
+  "Kannur",
+  "Kasargod",
+];

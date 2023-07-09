@@ -1,0 +1,39 @@
+.ser {
+  height: 400px;
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 801px) {
+  .ser__content {
+    margin: auto;
+    max-width: 86%;
+  }
+}
+.ser__content {
+  padding-top: 30px;
+}
+.ser__content h3 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.ser__row {
+  margin-top: 20px;
+}
+.ser__box {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  padding: 10px;
+}
+.ser__box h4 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+#sr__icons {
+  margin: auto;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+}

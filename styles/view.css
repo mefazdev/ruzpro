@@ -1,0 +1,216 @@
+@media only screen and (min-width: 801px) {
+  .view {
+    max-width: 75%;
+    margin: auto;
+  }
+}
+.view__top__box {
+  padding: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.view__top h6 {
+  font-family: "Montserrat", sans-serif;
+}
+.view__top__box h6 {
+  color: rgb(84, 81, 81);
+}
+.view__main__right {
+  font-family: "Rubik", sans-serif;
+}
+
+#view__btn {
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.view__top__box__right h1 {
+  font-size: 20px;
+  margin-top: 5px;
+}
+.view__top__box__right h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.nearby {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 5px;
+  height: fit-content;
+}
+
+.view__contact {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  max-width: 700px;
+
+  margin: auto;
+  margin-top: 100px;
+  background-color: #fff;
+  outline: none;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.view__contact h4 {
+  font-size: 18px;
+}
+.view__contact button {
+  float: right;
+  margin-bottom: 10px;
+
+  padding: 3px;
+  border-radius: 5px;
+  width: 80px;
+  font-size: 14px;
+  outline: none;
+}
+.contact__view button {
+  float: right;
+  margin-bottom: 10px;
+
+  padding: 3px;
+  border-radius: 5px;
+  width: 80px;
+  font-family: sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+.contact__view {
+  border: gray 1px solid;
+  padding: 5px;
+}
+#ss {
+  border: #8b4513 solid;
+  height: 100%;
+  max-height: fit-content;
+}
+@media only screen and (max-width: 800px) {
+  .amin__box p {
+    font-size: 15px;
+  }
+
+  .view__top__box__right h1 {
+    font-size: 22px;
+  }
+  .view__top__box__right__button {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.view__main h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.831);
+}
+
+.view__main h2 {
+  font-size: 15px;
+  font-weight: 500;
+
+  font-family: "Rubik", sans-serif;
+}
+
+.image-gallery {
+  height: auto;
+}
+
+.image-gallery-slide img {
+  width: 100%;
+
+  max-height: 80vh;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center center;
+}
+
+.fullscreen .image-gallery-slide img {
+  max-height: 100vh;
+}
+.view__main__row {
+  font-family: "Nunito", sans-serif;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.215);
+  padding-bottom: 2px;
+}
+.view__main__row p {
+  font-size: 14px;
+}
+.view__main__row h5 {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 19px;
+  font-weight: 600;
+}
+.view__btn {
+  width: 100%;
+  bottom: 0;
+}
+.view__btn button {
+  font-family: "Nunito", sans-serif;
+  background-color: #ff385c;
+  color: #fff;
+  padding: 7px;
+  width: 100%;
+  margin-top: 10px;
+}
+.view__btn button:hover {
+  background-color: #ff385de7;
+}
+
+.view__img__div {
+  height: 230px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.view__bottom {
+  font-family: "Montserrat", sans-serif;
+}
+.view__bottom h1 {
+  font-size: 18px;
+}
+.view__bottom h2 {
+  font-size: 15px;
+  color: rgb(33, 33, 33);
+}
+.img__count {
+  background-color: rgba(0, 0, 0, 0.758);
+  font-size: 13px;
+  color: #fff;
+  padding: 1px;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.view__bottom__boxes {
+  margin-top: 4px;
+  padding: 2px;
+  color: rgb(37, 36, 36);
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.view__bottom button {
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  background-color: #ff385c;
+}
+@media only screen and (max-width: 800px) {
+  .view__bottom {
+    padding: 15px;
+  }
+  .view__under {
+    padding: 15px;
+  }
+
+  .view__contact {
+    max-width: 95%;
+  }
+}
+.view__under {
+  font-family: "Rubik", sans-serif;
+}

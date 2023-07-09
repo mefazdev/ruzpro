@@ -1,0 +1,145 @@
+.register {
+  padding-top: 100px;
+  background-color: rgba(128, 128, 128, 0.062);
+}
+.register__box {
+  height: 600px;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+}
+.register__caption__p {
+  font-family: "Heebo", sans-serif;
+  padding: 5px;
+  background-color: rgba(208, 225, 228, 0.196);
+}
+#rgr__modal {
+  height: 100vh;
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rgr {
+  position: relative;
+  background-color: #fff;
+
+  width: 100%;
+  max-width: 400px;
+  border-radius: 6px;
+  padding: 20px;
+}
+.rgr__head h4 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.874);
+
+  font-family: "Heebo", sans-serif;
+}
+
+.rgr__input__first__row {
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.rgr__input__first__row input {
+  width: 100%;
+  background-color: rgb(243, 241, 241);
+  padding: 10px;
+
+  border-radius: 6px;
+  outline: none;
+}
+
+.rgr__email__div {
+  background-color: rgb(243, 241, 241);
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+.rgr__email__div input {
+  background-color: rgb(243, 241, 241);
+  margin-left: 5px;
+  outline: none;
+}
+.rgr__phone__div {
+  background-color: rgb(243, 241, 241);
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 6px;
+}
+#rgr__phone__input {
+  outline: none;
+  background-color: rgba(243, 241, 241, 0);
+}
+
+.rgr__otp__p {
+  color: gray;
+  font-family: "Heebo", sans-serif;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.rgr__password__div {
+  background-color: rgb(243, 241, 241);
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rgr__password__div input {
+  background-color: inherit;
+  width: 100%;
+  padding-left: 10px;
+  outline: none;
+}
+
+#rgr__btn {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+
+#rgr__btn:hover {
+  background-color: #081c45e6;
+}
+
+.rgr__or {
+  align-items: center;
+  margin-top: 20px;
+}
+.rgr__or hr {
+  width: 100%;
+}
+.rgr__or h4 {
+  width: 100%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.566);
+  font-family: "Heebo", sans-serif;
+}
+
+.prof__row__left img {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  display: inline-block;
+  overflow: hidden;
+  margin: auto;
+}
+.prof__row__img__div {
+ 
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}

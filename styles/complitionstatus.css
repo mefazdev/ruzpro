@@ -1,0 +1,64 @@
+.cs {
+  height: fit-content;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.cs__mob {
+  max-width: 95%;
+  margin: auto;
+  height: fit-content;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.cs h5 {
+  letter-spacing: 0.5px;
+  color: rgb(63, 62, 62);
+}
+
+progress {
+  width: 100%;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 15px;
+
+  box-shadow: 0 2px 5px rgba(19, 202, 47, 0.25) inset;
+}
+::-webkit-progress-value {
+  background-color: rgba(16, 177, 89, 0.879);
+  border-radius: 15px;
+}
+
+.cs__noti {
+  font-size: 14px;
+  color: rgb(62, 61, 61);
+  font-weight: 400;
+}
+
+.cs__row {
+  color: rgb(40, 40, 40);
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.cs__row p {
+  color: rgb(29, 28, 28);
+}
+
+#cs__tick__icon {
+  color: rgba(16, 177, 89, 0.879);
+}
+
+.ative__side__link {
+  background-color: rgba(128, 128, 128, 0.119);
+  color: rgb(81, 81, 81);
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.cs__row {
+  cursor: pointer;
+}

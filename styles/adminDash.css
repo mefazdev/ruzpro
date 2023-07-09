@@ -1,0 +1,10 @@
+.ad__nav {
+  height: 80px;
+}
+
+@media only screen and (min-width: 800px) {
+  .ad__cont {
+    max-width: 90%;
+    margin: auto;
+  }
+}

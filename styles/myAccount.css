@@ -1,0 +1,142 @@
+.ac {
+  padding-top: 40px;
+  padding-bottom: 150px;
+}
+
+@media only screen and (min-width: 801px) {
+  .ac {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+.ac__right__head {
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+}
+.ac__right__head button {
+  color: #fff;
+  background-color: rgb(7, 164, 77);
+  padding: 7px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 130px;
+}
+
+.edit__div {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: gray solid 1px;
+  padding: 2px;
+  border-radius: 5px;
+}
+#ac__edit__icon {
+  color: gray;
+}
+.ac__frow__left {
+  border: solid 1px rgba(128, 128, 128, 0.427);
+  border-radius: 5px;
+  position: relative;
+}
+.ac__frow__left__row {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.ac__avatar__div img {
+  margin: auto;
+  max-width: 140px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.ac__frow__footer {
+  padding: 10px;
+}
+
+.ac__avatar__div h6 {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+#ac__frow__footer__icon {
+  color: rgb(14, 246, 118);
+}
+
+.ac__frow__right__box {
+  border: solid 1px rgba(128, 128, 128, 0.427);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ac__frow__right__box h6 {
+  color: rgb(83, 83, 83);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.ac__frow__right__box p {
+  color: rgb(7, 164, 77);
+  font-size: 20px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.ac__props {
+  margin-top: 50px;
+}
+.ac__props__head {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+.ac__props__head button {
+  font-size: 15px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100px;
+}
+#ac__avatar {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+
+.mprop {
+  margin-top: 5px;
+  height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.ac__prop__edit__btn {
+  font-size: 14px;
+  padding: 4px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+#prop__more__icon {
+  font-size: 20px;
+  color: rgba(255, 0, 0, 0.61);
+}
+
+.my__prop__act {
+  z-index: 100;
+}
+
+.edit__account {
+  max-width: 400px;
+  padding: 20px;
+}
+
+#photo__edit__icon {
+  margin: auto;
+  float: right;
+  margin-top: -30px;
+  z-index: 1;
+}

@@ -1,0 +1,108 @@
+.contact__form__div {
+  margin-top: 50px;
+  max-width: 800px;
+}
+.contact__form__div h3 {
+  text-align: left;
+  font: normal normal bold 20px/30px Heebo;
+  font-family: "Heebo", sans-serif;
+  letter-spacing: 0px;
+  color: #363232;
+}
+.contact__form__div input {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #c4c4c4;
+  margin-top: 10px;
+  height: 50px;
+  outline: none;
+  padding-left: 10px;
+}
+.contact__phone__input input {
+  border: none;
+
+  height: 40px;
+  margin-top: 0px;
+}
+
+.contact__phone__input {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #c4c4c4;
+  margin-top: 10px;
+  height: 50px;
+  outline: none;
+  padding-left: 10px;
+}
+.contact__form__div textarea {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #c4c4c4;
+  height: 100px;
+  margin-top: 10px;
+  outline: none;
+  padding-left: 10px;
+  margin-left: 0;
+}
+
+.contact__form__div button {
+  background: #3c3c3c 0% 0% no-repeat padding-box;
+  border: 1px solid #363232;
+  margin-top: 10px;
+  text-align: center;
+  font: normal normal normal 16 px/33px Heebo;
+  font-family: "Heebo", sans-serif;
+  letter-spacing: 0px;
+  color: #fffcfc;
+  height: 50px;
+}
+
+.contact__map {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .contact__header {
+    background-size: cover;
+    background-position: center;
+    border-bottom: #000000 6px solid;
+  }
+
+  .contact__content {
+    max-width: 90%;
+    margin-top: 30px;
+  }
+  .contact__header h1 {
+    font: normal normal bold 26px/30px Heebo;
+    font-family: "Heebo", sans-serif;
+    padding-top: 130px;
+    padding-bottom: 80px;
+  }
+  .contact__header h3 {
+    font: normal normal normal 17px/20px Heebo;
+    font-family: "Heebo", sans-serif;
+    padding-bottom: 60px;
+  }
+  .contact__first__row h5 {
+    text-align: left;
+    font: normal normal bold 18px/30px Heebo;
+    letter-spacing: 1px;
+    color: #8d8d8d;
+    text-transform: uppercase;
+  }
+  .contact__first__row h1 {
+    text-align: left;
+    font: normal normal bold 25px/30px Heebo;
+    font-family: "Heebo", sans-serif;
+    letter-spacing: 0px;
+    color: #363232;
+  }
+  .contact__first__row p {
+    text-align: left;
+    font: normal normal normal 16px/25px Heebo;
+    font-family: "Heebo", sans-serif;
+    letter-spacing: 0px;
+    color: #8d8d8d;
+    margin-top: 20px;
+  }
+  .contact__adress__div {
+    margin: auto;
+  }
+}

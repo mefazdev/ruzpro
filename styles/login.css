@@ -1,0 +1,185 @@
+#login__modal {
+  height: 100vh;
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login {
+  position: relative;
+  background-color: #fff;
+
+  width: 100%;
+  max-width: 400px;
+  border-radius: 6px;
+  padding: 20px;
+}
+.login__head h4 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.874);
+
+  font-family: "Heebo", sans-serif;
+}
+
+.login__sub {
+  align-items: center;
+  margin-top: 10px;
+}
+.login__sub hr {
+  width: 100%;
+}
+.login__sub h4 {
+  width: 100%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.566);
+  font-family: "Heebo", sans-serif;
+}
+.login__social {
+  width: 100%;
+
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.login__social__box {
+  width: 100%;
+  height: 45px;
+
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login__social__box:hover {
+  cursor: pointer;
+  background-color: rgb(241, 239, 239);
+}
+.login__social__box img {
+  width: 100%;
+  max-width: 25px;
+}
+.login__social__box h6 {
+  font-family: "Heebo", sans-serif;
+  margin-left: 2px;
+  font-size: 15px;
+}
+.login__social__in {
+  display: flex;
+}
+.or__row {
+  align-items: center;
+  margin-top: 30px;
+}
+.or__row hr {
+  width: 20%;
+}
+.or__row h6 {
+  width: 100%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.566);
+  font-family: "Heebo", sans-serif;
+}
+.login__input__row {
+  margin-top: 20px;
+}
+.login__input__div {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.089);
+}
+.login__input__div input {
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  outline: none;
+
+  background-color: rgba(128, 128, 128, 0);
+}
+#login__input__two {
+  margin-top: 20px;
+}
+
+#login__forgot__h4 {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Heebo", sans-serif;
+  font-size: 15px;
+}
+#login__forgot__h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#login__btn {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+#login__btn:hover {
+  background-color: #0f4514e6;
+}
+.login__create {
+  margin-top: 20px;
+  text-align: center;
+}
+.login__create h4 {
+  font-family: "Heebo", sans-serif;
+  font-size: 15px;
+}
+.login__create h3 {
+  font-family: "Heebo", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.login__create h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login__close {
+  background-color: rgb(227, 8, 8);
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  right: 0;
+  position: absolute;
+  margin-right: 20px;
+}
+.login__close:hover {
+  cursor: pointer;
+}
+.login__img__div {
+  max-width: 23px;
+}
+
+.loader {
+  position: absolute;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.616);
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .login {
+    max-width: 95%;
+  }
+}

@@ -1,0 +1,92 @@
+.navbar {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+
+  position: sticky;
+  top: 0;
+
+  box-shadow: rgba(33, 35, 38, 0.162) 0px 10px 5px -10px;
+
+  z-index: 100;
+  background-color: #fffffff9;
+}
+
+@media only screen and (min-width: 801px) {
+  .nav__content {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+.logo {
+  max-width: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__search {
+  width: 100%;
+  max-width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.329) 0px 1px 4px;
+  height: 40px;
+  border-radius: 18px;
+  align-items: center;
+  color: rgb(76, 73, 73);
+  font-size: 14px;
+
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+}
+.nav__search__mob {
+  min-width: 100%;
+  max-width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.329) 0px 1px 4px;
+  height: 35px;
+  border-radius: 18px;
+  align-items: center;
+  color: rgb(76, 73, 73);
+  font-size: 14px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+}
+.nav__search__icon {
+  background-color: rgb(11, 94, 11);
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__search__mob__icon {
+  background-color: rgb(11, 94, 11);
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.up__button {
+  background-color: rgb(11, 94, 11);
+  color: #fff;
+  width: 100px;
+  border-radius: 15px;
+  font-size: 14px;
+  height: 32px;
+  margin-top: 4px;
+}
+
+@media only screen and (max-width: 800px) {
+  .logo {
+    max-width: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
