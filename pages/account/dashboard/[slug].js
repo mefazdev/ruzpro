@@ -178,7 +178,7 @@ export default function Dashboard() {
               />
             </div>
             <Link href="/upload/BasicInfo">
-              <button className="">Add Property</button>
+              <button className="bg-green-800">Add Property</button>
             </Link>
           </div>
 
@@ -252,7 +252,9 @@ export default function Dashboard() {
               <div className="ac__props__head flex justify-between">
                 <h6>My Properties</h6>
                 <Link href={`/account/myProps/${userId}`}>
-                  <button style={{ backgroundColor: "rgb(7, 164, 77)" }}>
+                  <button  className="bg-green-800"
+                  // style={{ backgroundColor: "rgb(7, 164, 77)" }}
+                  >
                     View More
                   </button>
                 </Link>
