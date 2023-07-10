@@ -74,7 +74,7 @@ export default function MinSearch() {
                     builtUnit={d.builtUnit}
                     displayPrice={d.displayPrice}
                     bedrooms={d.bedrooms}
-                    demo={demo}
+                    demo={d.demo}
                   />
                 );
               }
