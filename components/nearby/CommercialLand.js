@@ -6,10 +6,10 @@ import {
   TextField,
 } from "@mui/material";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 
-export default function CommercialLandNearby() {
+export default function CommercialLandNearby({data}) {
   const [nearShoppingArea, setNearShoppingArea] = useState(Boolean);
   const [nearResidentialArea, setNearResidentialArea] = useState(Boolean);
   const [nearCommercialArea, setNearCommercialArea] = useState(Boolean);
@@ -20,6 +20,14 @@ export default function CommercialLandNearby() {
   const router = useRouter();
   const id = router.query.slug;
 
+  useEffect(() => {
+    setNearShoppingArea(data?.nearby?.nearShoppingArea)
+    setNearCommercialArea(data?.nearby?.nearCommercialArea)
+setNearResidentialArea(data?.nearby?.nearResidentialArea)
+setNearTourismZone(data?.nearby?.nearTourismZone)
+  }, [data]);
+
+  
   const addNearBy = async () => {
     setSaving(true);
     try {

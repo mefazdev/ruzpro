@@ -240,7 +240,7 @@ export default function ComplitionStatus({ id, data }) {
                 <NearMeIcon />
                 <p className="ml-2">Nearby</p>
               </div>
-              {data?.locationType ? (
+              {data?.nearby ? (
                 <CheckCircleOutlineIcon id="cs__tick__icon" />
               ) : (
                 ""
@@ -253,7 +253,7 @@ export default function ComplitionStatus({ id, data }) {
         <Link href={`/upload/images/${id}`}>
             <div
               className={
-                router.pathname == `/upload/nearby/[slug]`
+                router.pathname == `/upload/images/[slug]`
                   ? "ative__side__link justify-between flex p-3"
                   : "cs__row  justify-between flex p-3"
               }

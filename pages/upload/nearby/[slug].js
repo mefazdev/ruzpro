@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import ComplitionStatus from "../../../components/complitionStatus/ComplitionStatus";
 import MobComplitionStatus from "../../../components/complitionStatus/MobComplition";
 
-export default function Amenities() {
+export default function NearBy() {
   const router = useRouter();
   const id = router.query.slug;
   const [data, setData] = useState({});
@@ -21,8 +21,7 @@ export default function Amenities() {
       );
       const { data } = await res.json();
       setData(data);
-      setTwoWheelerAccess(data?.twoWheelerAcces);
-      setFourWheelerAccess(data?.fourWheelerAccess);
+     
     } catch (error) {
       console.log(error);
     }
@@ -45,7 +44,7 @@ export default function Amenities() {
           {data?.propType == "commercial land" ? (
             <CommercialLandNearby />
           ) : (
-            <CommercialBuildingNearby />
+            <CommercialBuildingNearby data={data} />
           )}
         </div>
       </div>

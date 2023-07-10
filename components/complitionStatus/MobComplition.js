@@ -41,7 +41,7 @@ export default function MobComplitionStatus({ id, data }) {
         unmountOnExit
       >
         <div className="absolute  w-full left-0 h-fit  mt-5">
-        <div className="cs__mob relative w-full bg-gray-200"
+        <div className="cs__mob relative w-full bg-gray-50"
         style={{zIndex:'100'}}
         >
             <CancelRoundedIcon
@@ -266,7 +266,7 @@ export default function MobComplitionStatus({ id, data }) {
                 <NearMeIcon />
                 <p className="ml-2">Nearby</p>
               </div>
-              {data?.locationType ? (
+              {data?.nearby ? (
                 <CheckCircleOutlineIcon id="cs__tick__icon" />
               ) : (
                 ""
@@ -280,7 +280,7 @@ export default function MobComplitionStatus({ id, data }) {
 <Link href={`/upload/images/${id}`}>
             <div
               className={
-                router.pathname == `/upload/nearby/[slug]`
+                router.pathname == `/upload/images/[slug]`
                   ? "ative__side__link justify-between flex p-3"
                   : "cs__row  justify-between flex p-3"
               }

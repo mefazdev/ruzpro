@@ -1,13 +1,29 @@
-import { Button, Checkbox, FormControlLabel, FormGroup } from "@mui/material";
+import {
+  Button,
+  Checkbox,
+  FormControlLabel,
+  FormGroup,
+  Switch,
+} from "@mui/material";
 import { useRouter } from "next/router";
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
+import { FormControl } from "react-bootstrap";
 
-export default function CommercialBuildingNearby() {
+export default function CommercialBuildingNearby({ data }) {
   const [nearContainerAccess, setNearContainerAccess] = useState(Boolean);
   const [saving, setSaving] = useState(false);
   const router = useRouter();
   const id = router.query.slug;
+
+  useEffect(() => {
+    setNearContainerAccess(data?.nearby?.nearContainerAccess);
+  }, [data]);
+
+  const handleChange = (e) => {
+    setNearContainerAccess(e.target.checked);
+  };
   const addNearBy = async () => {
     setSaving(true);
     try {
@@ -21,11 +37,15 @@ export default function CommercialBuildingNearby() {
             // 'Content-type': 'text/plain',
           },
           body: JSON.stringify({
-            nearContainerAccess: nearContainerAccess,
+            nearby: {
+              nearContainerAccess: nearContainerAccess,
+            },
           }),
         }
       );
-      await router.push(`/upload/images/${id}`);
+      const { data } = await res.json();
+      console.log(data);
+      // await router.push(`/upload/images/${id}`);
       setSaving(false);
     } catch (error) {
       setSaving(false);
@@ -36,19 +56,24 @@ export default function CommercialBuildingNearby() {
   return (
     <div>
       <div className=" mt-5 lg:mt-7 grid lg:grid-cols-2 gap-4 lg:gap-10">
-        <div>
-          <h6>Near container access</h6>
-          <FormGroup>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  value={nearContainerAccess}
-                  onChange={() => setNearContainerAccess(!nearContainerAccess)}
-                />
-              }
-              label="Yes"
-            />
-          </FormGroup>
+        <div className="">
+          {/* <h6  >
+            Near container access
+          </h6> */}
+          
+
+           
+
+          <FormControlLabel
+            control={
+              <Switch
+                checked={nearContainerAccess}
+                onChange={handleChange}
+                name="gilad"
+              />
+            }
+            label="Near container access"
+          />
         </div>
       </div>
 
