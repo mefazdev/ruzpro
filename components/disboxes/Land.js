@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Carousel from "react-material-ui-carousel";
 import { FiShare2 } from "react-icons/fi";
-import { Link, Slide } from "@mui/material";
+import { Link, Skeleton, Slide } from "@mui/material";
 import CancelIcon from "@mui/icons-material/Cancel";
 import Share from "../Share";
 import AddWishList from "../AddWishList";
@@ -46,7 +46,7 @@ export default function LandBox({
   }, [images]);
   return (
     <div className="resbox relative">
-      <Carousel
+      {images.length ? <Carousel
         autoPlay={false}
         animation="slide"
         swipe={true}
@@ -97,10 +97,20 @@ export default function LandBox({
             </Link>
           );
         })}
-      </Carousel>
+      </Carousel> :  
+      
+      <div
+                className="res__bg bg-gray-200"
+                style={{
+                  // backgroundImage: `url(${d})`,display:'flex',
+                  alignItems: "center",
+                }}
+              ></div>
+ }
+      
 
       <div className="resbox__bottom mt-2 p-1">
-        <div className="flex justify-between">
+        <div className="flex justify-between">  
           <Link
             href={`/view/residential/${encodeURIComponent(id)}`}
             style={{ color: "inherit", textDecoration: "none" }}

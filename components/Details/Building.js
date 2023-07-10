@@ -58,7 +58,7 @@ if(cyr){
   const initYears = () => {
     let y = [];
 
-    for (let i = 1950; i < 2023; i++) {
+    for (let i = 1950; i < 2024; i++) {
       y = [...y, i];
     }
     setYear(y);

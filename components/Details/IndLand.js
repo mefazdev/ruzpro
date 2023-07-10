@@ -35,7 +35,7 @@ const id = router.query.slug
     const initYears = ()=>{
       let y = []
       let i 
-      for (let i  = 1950; i<2023; i++){
+      for (let i  = 1950; i<2024; i++){
         y = [...y,i]
       }
       setYear(y)

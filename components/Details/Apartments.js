@@ -27,8 +27,7 @@ export default function Apartments({data}) {
     const [nullTotalFloor,setNullTotalFloor] = useState(false)
     
     const [nullCyr,setNullCyr] = useState(false)
-    
-    const [nullReadyMove,setNullReadyMove] = useState(false)
+     
 const [saving, setSaving] = useState(false)
 
     const validateForm = ()=>{
@@ -87,7 +86,7 @@ if(readyToMove){
     const initYears = ()=>{
       let y = []
       let i 
-      for (let i  = 1950; i<2023; i++){
+      for (let i  = 1950; i<2024; i++){
         y = [...y,i]
       }
       setYear(y)
