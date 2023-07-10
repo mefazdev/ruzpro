@@ -47,7 +47,7 @@ bedrooms,
 
   return (
     <div className="resbox relative">
-      <Carousel
+      {imgs.length ?   <Carousel
         autoPlay={false}
         animation="slide"
         swipe={true}
@@ -96,7 +96,28 @@ bedrooms,
             </Link>
           );
         })}
-      </Carousel>
+      </Carousel> : <div
+          className="res__bg bg-gray-200"
+          style={{
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          {demo ? (
+            <div
+              className="bg-yellow-300 pl-1 pr-1"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: "14px",
+              }}
+            >
+              <p>For demo purpose only</p>
+            </div>
+          ) : (
+            ""
+          )}
+        </div>}
+    
 
       <div className="resbox__bottom mt-2 p-1">
         <div className="flex justify-between">

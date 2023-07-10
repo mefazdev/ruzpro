@@ -47,63 +47,88 @@ export default function ResiBox({
   }, [images]);
   return (
     <div className="resbox relative">
-      <Carousel
-        autoPlay={false}
-        animation="slide"
-        swipe={true}
-        indicatorContainerProps={{
-          style: {
-            marginTop: "-30px",
-            textAligh: "left",
-            zIndex: 1,
-            opacity: 1,
-            position: "absolute",
-          },
-        }}
-        activeIndicatorIconButtonProps={{
-          style: {
-            color: "#fff",
-          },
-        }}
-      >
-        {imgs?.map((d, i) => {
-          return (
-            <Link
-              key={i}
-              href={`/view/residential/${encodeURIComponent(id)}`}
-              style={{ color: "inherit", textDecoration: "none" }}
-              target="_blank"
+      {imgs.length ? (
+        <Carousel
+          autoPlay={false}
+          animation="slide"
+          swipe={true}
+          indicatorContainerProps={{
+            style: {
+              marginTop: "-30px",
+              textAligh: "left",
+              zIndex: 1,
+              opacity: 1,
+              position: "absolute",
+            },
+          }}
+          activeIndicatorIconButtonProps={{
+            style: {
+              color: "#fff",
+            },
+          }}
+        >
+          {imgs?.map((d, i) => {
+            return (
+              <Link
+                key={i}
+                href={`/view/residential/${encodeURIComponent(id)}`}
+                style={{ color: "inherit", textDecoration: "none" }}
+                target="_blank"
+              >
+                {images?.[0] ? (
+                  <div
+                    className="res__bg cursor-pointer flex"
+                    style={{
+                      backgroundImage: `url(${d})`,
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    {demo ? (
+                      <div
+                        className="bg-yellow-300 pl-1 pr-1"
+                        style={{
+                          fontFamily: "Montserrat, sans-serif",
+                          fontSize: "14px",
+                        }}
+                      >
+                        <p>For demo purpose only</p>
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                ) : (
+                  <Skeleton variant="rounded" width={"100%"} height={300} />
+                )}
+              </Link>
+            );
+          })}
+        </Carousel>
+      ) : (
+        <div
+          className="res__bg bg-gray-200"
+          style={{
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          {demo ? (
+            <div
+              className="bg-yellow-300 pl-1 pr-1"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontSize: "14px",
+              }}
             >
-              {images?.[0] ? (
-                <div
-                  className="res__bg cursor-pointer flex"
-                  style={{
-                    backgroundImage: `url(${d})`,
-                    display:'flex',
-                    alignItems: "center",
-                  }}
-                >
-                  {demo ? (
-                    <div
-                      className="bg-yellow-300 pl-1 pr-1"
-                      style={{
-                        fontFamily: "Montserrat, sans-serif",
-                        fontSize: "14px",
-                      }}
-                    >
-                      <p>For demo purpose only</p>
-                    </div>
-                  ) : (
-                    ""
-                  )}
-                </div>
-              ) : (
-                <Skeleton variant="rounded" width={"100%"} height={300} />
-              )}
-            </Link>
-          );
-        })}
-      </Carousel>
+              <p>For demo purpose only</p>
+            </div>
+          ) : (
+            ""
+          )}
+        </div>
+      )}
+
       <div className="resbox__bottom mt-2 p-1">
         <div className="flex justify-between">
           <Link
