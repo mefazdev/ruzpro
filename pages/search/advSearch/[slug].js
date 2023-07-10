@@ -79,7 +79,7 @@ export default function AdvSearch() {
                     builtArea={d.builtArea}
                     builtUnit={d.builtUnit}
                     displayPrice={d.displayPrice}
-                    bedrooms={d.bedrooms} demo={demo}
+                    bedrooms={d.bedrooms} demo={d.demo}
                   />
                 );
               }
@@ -102,7 +102,7 @@ export default function AdvSearch() {
                     images={d.images}
                     plotArea={d.plotArea}
                     plotUnit={d.plotUnit}
-                    displayPrice={d.displayPrice} demo={demo}
+                    displayPrice={d.displayPrice} demo={d.demo}
                   />
                 );
               }
@@ -125,7 +125,7 @@ export default function AdvSearch() {
                     images={d.images}
                     builtArea={d.builtArea}
                     builtUnit={d.builtUnit}
-                    displayPrice={d.displayPrice}demo={demo}
+                    displayPrice={d.displayPrice}demo={d.demo}
                   />
                 );
               }
@@ -143,7 +143,7 @@ export default function AdvSearch() {
                     images={d.images}
                     builtArea={d.builtArea}
                     builtUnit={d.builtUnit}
-                    displayPrice={d.displayPrice}demo={demo}
+                    displayPrice={d.displayPrice}demo={d.demo}
                   />
                 );
               }

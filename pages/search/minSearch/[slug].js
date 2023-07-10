@@ -98,7 +98,7 @@ export default function MinSearch() {
                     plotArea={d.plotArea}
                     plotUnit={d.plotUnit}
                     displayPrice={d.displayPrice}
-                    demo={demo}
+                    demo={d.demo}
                   />
                 );
               }
@@ -122,7 +122,7 @@ export default function MinSearch() {
                     builtArea={d.builtArea}
                     builtUnit={d.builtUnit}
                     displayPrice={d.displayPrice}
-                    demo={demo}
+                    demo={d.demo}
                   />
                 );
               }
@@ -141,7 +141,7 @@ export default function MinSearch() {
                     builtArea={d.builtArea}
                     builtUnit={d.builtUnit}
                     displayPrice={d.displayPrice}
-                    demo={demo}
+                    demo={d.demo}
                   />
                 );
               }
