@@ -11,11 +11,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { offSearch } from "../../../redux/searchSlice";
 
 export default function AdvSearch() {
+  
   const [data, setData] = useState([]);
   const router = useRouter();
   const [slug, setSlug] = useState({});
   const propType = slug.propType; 
   const dispatch = useDispatch();
+
   const getProperty = async () => {
     if (slug.propType) {
       try {
@@ -43,6 +45,7 @@ export default function AdvSearch() {
   );
   useEffect(() => {
     getProperty();
+    // console.log('helloo')
   }, [slug]);
 
   useEffect(() => {

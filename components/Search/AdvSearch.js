@@ -174,7 +174,7 @@ export default function AdvSearch() {
                     {" "}
                     Residential Appartments
                   </MenuItem>
-                  <MenuItem value="Residential House/Villa">
+                  <MenuItem value="Residential House-Villa">
                     Residential House/Villa
                   </MenuItem>
 
