@@ -43,9 +43,8 @@ export default function CommercialBuildingNearby({ data }) {
           }),
         }
       );
-      const { data } = await res.json();
-      console.log(data);
-      // await router.push(`/upload/images/${id}`);
+     
+      await router.push(`/upload/images/${id}`);
       setSaving(false);
     } catch (error) {
       setSaving(false);
