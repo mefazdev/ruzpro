@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <div className="pb-14">
       <Navbar />
-
+ 
       <div className="content">
         <CategoryScroll />
 
