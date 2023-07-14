@@ -1,0 +1,32 @@
+{
+    "theme_color": "#207816",
+    "background_color": "#efece9",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Ruzrpo",
+    "short_name": "Rp",
+    "description": "The property listing app",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

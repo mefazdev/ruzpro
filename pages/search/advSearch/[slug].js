@@ -11,7 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { offSearch } from "../../../redux/searchSlice";
 
 export default function AdvSearch() {
-  
+
   const [data, setData] = useState([]);
   const router = useRouter();
   const [slug, setSlug] = useState({});
@@ -60,7 +60,7 @@ export default function AdvSearch() {
       <Navbar />
       <div className="content">
         {" "}
-        <CategoryScroll />
+        <CategoryScroll propType={propType}/>
         {results.length ? (
           <div className="mt-4 grid lg:grid-cols-4 lg:gap-6">
             {results?.map((d, i) => {
@@ -70,7 +70,7 @@ export default function AdvSearch() {
                 propType === "residential house-villa"
               ) {
                 return (
-                  <ResiBox
+                  <ResiBox 
                     key={i}
                     id={d._id}
                     propType={d.propType}

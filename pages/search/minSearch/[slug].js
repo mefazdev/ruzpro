@@ -51,7 +51,7 @@ export default function MinSearch() {
       <Navbar />
       <div className="content">
         {" "}
-        <CategoryScroll />
+        <CategoryScroll propType={propType} />
         {results.length ? (
           <div className="mt-4 grid lg:grid-cols-4 lg:gap-6">
             {results?.map((d, i) => {
