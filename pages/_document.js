@@ -15,8 +15,8 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 })(window,document,'script','dataLayer','GTM-TCLX2LT');`
           }} 
         ></Script>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-EN0D03D4L3"></Script>
-<Script>
+        <Script id='tag-manager' async src="https://www.googletagmanager.com/gtag/js?id=G-EN0D03D4L3"></Script>
+<Script id='analutics-code'>
   {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
