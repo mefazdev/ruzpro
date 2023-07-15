@@ -43,11 +43,11 @@ export default function CategoryScroll({ propType }) {
         swipeable={true}
         removeArrowOnDeviceType="mobile"
         // centerMode={true}
-        // focusOnSelect={false}
+        focusOnSelect={false}
         // slidesToSlide={2}
         // infinite={true}
         keyBoardControl={true}
-        // partialVisbile={true}
+        partialVisbile={true}
       >
         <Link href={"/catview/residential apartments"}>
           <div className="cat__scrl__div cursor-pointer">
