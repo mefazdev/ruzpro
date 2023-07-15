@@ -16,13 +16,13 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           }} 
         ></Script>
         <Script id='tag-manager' async src="https://www.googletagmanager.com/gtag/js?id=G-EN0D03D4L3"></Script>
-<Script id='analutics-code'>
-  {`window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-EN0D03D4L3');`}
-</Script>
+<Script id='analutics-code' strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html:`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-EN0D03D4L3');`}}></Script>
         {/* <!-- End Google Tag Manager --> */}
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon.png"></link>
