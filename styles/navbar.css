@@ -67,16 +67,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .up__button {
   background-color: rgb(11, 94, 11);
   color: #fff;
-  width: 100px;
+  /* width: 100px; */
   border-radius: 15px;
   font-size: 14px;
   height: 32px;
   margin-top: 4px;
+  letter-spacing: .5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
 }
 
 @media only screen and (max-width: 800px) {

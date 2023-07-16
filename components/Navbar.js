@@ -132,10 +132,11 @@ export default function Navbar() {
             <div className="hidden md:grid">
               <Link href={"/upload/BasicInfo"}>
                 <button
-                  className="up__button"
+                  className="up__button pl-3 pr-3"
+                  // className="bg-green-800 text-white text-sm"
                   style={{ boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px" }}
                 >
-                  Add
+                  Post Properties
                 </button>
               </Link>
             </div>

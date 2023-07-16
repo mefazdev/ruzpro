@@ -27,7 +27,7 @@ export default function BottomNav() {
       >
         <BottomNavigationAction
           // label="Home"
-          value="recents"
+          value="home"
           icon={
             <Link style={{ color: "inherit" }} href="/">
               <HomeIcon />
@@ -35,16 +35,18 @@ export default function BottomNav() {
           }
         />
         <BottomNavigationAction
-          value="favorites"
+          value="upload"
           icon={
             <Link style={{ color: "inherit" }} href="/upload/BasicInfo">
-              <AddCircleOutlineOutlinedIcon />
+              <button
+              style={{  fontFamily: "Montserrat, sans-serif",fontSize:'14px'}}
+              className="bg-green-800 text-white p-1 rounded-xl  pr-3 pl-3 shadow-md">UPLOAD</button>
             </Link>
           }
         />
         <BottomNavigationAction
           onClick={() => setMenu(!menu)}
-          value="nearby"
+          value="menu"
           icon={<MoreVertIcon />}
         />
         {menu ? (
