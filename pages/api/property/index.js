@@ -1,6 +1,5 @@
 import dbConnect from "../../../utils/dbConnect";
-// import Property from '../../../models/Property'
-import User from "../../../models/User";
+ 
 import Property from "../../../models/Property";
  
 dbConnect();

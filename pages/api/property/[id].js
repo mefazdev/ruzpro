@@ -38,7 +38,7 @@ export default async (req, res) => {
                 }
                 );
                 if(!property){
-                    res.status(400).json({status:false,error:error})
+                    res.status(400).json({status:false})
                 }
 
             res.status(200).json({status:true,data:property})
